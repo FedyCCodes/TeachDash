@@ -1,0 +1,58 @@
+/* line 6, input */
+.tdr-disable-animations *,
+.tdr-disable-animations button,
+.tdr-disable-animations div,
+.tdr-disable-animations img,
+.tdr-disable-animations svg,
+.tdr-disable-animations a,
+.tdr-disable-animations p,
+.tdr-disable-animations h1,
+.tdr-disable-animations h2,
+.tdr-disable-animations h3,
+.tdr-disable-animations h4,
+.tdr-disable-animations h5,
+.tdr-disable-animations h6,
+.tdr-disable-animations span,
+.tdr-disable-animations .default-style {
+  transition: none;
+}
+/* line 14, input */
+.tdr-centerize {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* line 27, input */
+.tdr-app-button {
+  padding: 5px 14px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+/* line 39, input */
+.tdr-app-button:hover {
+  cursor: pointer;
+  box-shadow: none;
+  font-size: 16px;
+}
+/* line 55, input */
+.tdr-app-circle-button {
+  padding: 0;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+/* line 73, input */
+.tdr-app-circle-button img,
+.tdr-app-circle-button svg {
+  transform: translateY(2px);
+  width: 26px;
+  height: 26px;
+  transition: 0.3s;
+}
+/* line 93, input */
+.tdr-app-circle-button:hover img,
+.tdr-app-circle-button:hover svg {
+  width: 22px;
+}

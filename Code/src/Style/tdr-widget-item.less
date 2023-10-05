@@ -1,0 +1,79 @@
+// tdr-widget-item.less
+
+@media (max-width: 800px) { 
+  // changes when the screen size is less then 700 
+  
+  body #root .tdr-app-container .tdr-widget-item {
+    // stylizes the root element 
+    
+    height: 120px;
+    // makes it 120 pixels in height 
+    
+  }
+  
+  body #root .tdr-app-container .tdr-app-page-home .tdr-app-page-home-widgets {
+    // stylizes the container for it
+    
+    grid-template-columns: 1fr;
+    // makes only one row
+    
+    grid-auto-rows: 160px;
+    // shrinks the widget size
+  }
+}
+
+@media (min-width: 800px) { 
+  // changes when the screen size is bigger then 700 
+  
+  body #root .tdr-app-container .tdr-widget-item {
+    // stylizes the root element 
+    
+    // width: calc(50% - 40px);
+    // makes the width full size of the frame where it is stored 
+    
+    height: 180px;
+    // makes it 180 pixels in height 
+    
+  }
+  
+  body #root .tdr-app-container .tdr-app-page-home .tdr-app-page-home-widgets {
+    // stylizes the container for it
+    
+    grid-template-columns: 1fr 1fr;
+    // makes it two row
+    
+    grid-auto-rows: 220px;
+    // shrinks the widget size
+  }
+}
+
+/*
+    border: none;
+    */
+
+body #root .tdr-app-container {
+  // stylizes the root element 
+  
+  .tdr-app-page-home .tdr-app-page-home-widgets {
+    // stylizes the widgets container
+    
+    display: grid;
+    // puts it in a grid format
+    
+  }
+  
+  .tdr-widget-item {
+    // this stylizes each widget item in the home page 
+    
+    display: inline-block;
+    // makes it fit into place with other widgets 
+    
+    width: calc(100% - 40px);
+    // makes the width full size of the frame where it is stored 
+    
+    margin: 8px;
+    // the invisible padding 
+    
+  }
+
+}

@@ -1,0 +1,29 @@
+/* line 6, input */
+body #root .tdr-app-container .tdr-app-page-app-classes {
+  overflow: scroll;
+}
+/* line 13, input */
+body #root .tdr-app-container .tdr-app-page-home .tdr-app-class-item .tdr-app-circle-button {
+  margin-top: 5px;
+  opacity: 0;
+  transition: 0.3s;
+}
+/* line 25, input */
+body #root .tdr-app-container .tdr-app-page-home .tdr-app-class-item .tdr-app-circle-button:hover {
+  box-shadow: none;
+}
+/* line 36, input */
+body #root .tdr-app-container .tdr-app-class-item {
+  color: white;
+  margin: 5px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+/* line 54, input */
+body #root .tdr-app-container .tdr-app-class-item h1 {
+  font-size: larger;
+}
+/* line 62, input */
+body #root .tdr-app-container .tdr-app-class-item:hover .tdr-app-circle-button {
+  opacity: 1;
+}

@@ -1,0 +1,106 @@
+// tdr-components.less
+
+.tdr-disable-animations {
+  // this stylizes the body when animations are disabled
+  
+  *, button, div, img, svg, a, p, h1, h2, h3, h4, h5, h6, span, .default-style {
+    // this stylizes all the elements that are children of the body element when animations are disabled
+    
+    transition: none;
+    // disables smoothness
+  }
+}
+
+.tdr-centerize {
+  // this is a class that allows objects to be centered with ease
+  
+  display: flex;
+  // makes the css allow to use align items and justify-content
+  
+  align-items: center;
+  // makes it center on the y axis
+  
+  justify-content: center;
+  // makes it center on the x axis
+}
+
+.tdr-app-button {
+  // this stylizes the buttons
+  
+  padding: 5px 14px;
+  // removes the extra padding
+  
+  border-radius: 10px;
+  // it would turn the button circle
+  
+  font-size: 18px;
+  // sets the font size
+  
+  &:hover {
+    // when the cursor
+    
+    cursor: pointer;
+    // puts the cursor into clicker mode
+    
+    box-shadow: none;
+    // makes the box shadow hidden
+    
+    font-size: 16px;
+    // sets the font size
+    
+  }
+  
+}
+
+.tdr-app-circle-button {
+  // this stylizes the circle buttons
+  
+  padding: 0;
+  // removes the extra padding
+  
+  border-radius: 50%;
+  // it would turn the button circle
+  
+  width: 36px;
+  // this sets the width of 36px
+  
+  height: 36px;
+  // this sets the height of 36px
+  
+  transition: 0.3s;
+  // makes the width smooth
+  
+  img, svg {
+    // this stylizes the circle button image
+    
+    transform: translateY(2px);
+    // this moves the picture down
+    
+    width: 26px;
+    // this sets the width of 26px
+    
+    height: 26px;
+    // this sets the height of 26px
+    
+    transition: 0.3s;
+    // makes the width smooth
+    
+  }
+  
+  &:hover {
+    // this is called when the button is hovered
+    
+    img, svg {
+      // stylizes the image
+      
+      width: 22px;
+      // this sets the width of 26px
+      
+    }
+    
+  }
+  
+  cursor: pointer;
+  // makes the cursor into a clicker
+  
+}

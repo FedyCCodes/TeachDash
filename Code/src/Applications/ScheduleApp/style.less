@@ -1,0 +1,305 @@
+// style.less
+
+.tdr-schedule-widget {
+  // stylizes the widget
+  
+  .tdr-schedule-widget-body {
+    // stylizes the body
+    
+    .tdr-schedule-widget-body-item {
+      // stylizes the body items
+      
+      border: none;
+      // removes the outline
+      
+    }
+    
+  }
+  
+}
+
+
+@media (max-width: 800px) { 
+  // changes when the screen size is less then 700 */
+  
+  .tdr-schedule-widget {
+    // stylizes the widget
+    
+    .tdr-schedule-widget-body {
+      // stylizes the body
+      
+      .tdr-schedule-widget-body-item {
+        // stylizes the body items
+        
+        border: none;
+        // removes the outline
+        
+        display: inline-block;
+        // makes the elements next to each other
+        
+        width: calc(50% - 30px);
+        // sets a width of half the thing
+        
+        height: calc(100% - 25px);
+        // puts in a fixed height
+        
+        margin-right: 10px;
+        // puts in padding at the bottom
+        
+      }
+      
+    }
+    
+  }
+  
+}
+
+@media (min-width: 800px) { 
+  // changes when the screen size is bigger then 700 */
+  
+  .tdr-schedule-widget {
+    // stylizes the widget
+    
+    .tdr-schedule-widget-body {
+      // stylizes the body
+      
+      .tdr-schedule-widget-body-item {
+        // stylizes the body items
+        
+        border: none;
+        // removes the outline
+        
+        height: calc(50% - 25px);
+        // puts in a fixed height
+        
+        margin-bottom: 10px;
+        // puts in padding at the bottom
+        
+      }
+      
+    }
+    
+  }
+  
+}
+
+
+body #root .tdr-app-container .tdr-app-schedule-app-id {
+  // stylizes the app
+  
+  .tdr-app-class-item {
+    // stylizes class items
+    
+    overflow: hidden;
+    // removes outside elements
+    
+    /*&:active {
+      // the click item
+      
+      height: 0;
+      // shrinks height
+      
+      padding: 0;
+      // removes the padding
+      
+    }*/
+    
+  }
+  
+}
+
+body #root .tdr-app-container .tdr-schedule-app-drag-drop {
+  // the drag and drop
+  
+  position: absolute;
+  // puts in a position
+  
+  top: 0;
+  left: 0;
+  // puts it at top left
+  
+  transform: translate(-50%, -50%);
+  // makes it center
+  
+  transition: none;
+  // disables smoothing
+  
+}
+
+body #root .tdr-app-container .tdr-app-page-container .tdr-schedule-app {
+  // stylizes the application
+  
+  height: 100%;
+  // makes the height full size
+  
+  width: 100%;
+  // makes the width full size
+  
+  .tdr-schedule-app-header {
+    // this stylizes the application header
+    
+    box-shadow: none;
+    // this removes the shadow
+    
+    margin-bottom: 10px;
+    // adds invisible padding to the bottom
+    
+    height: 35px;
+    // adds a height of 35 pixels
+    
+    .tdr-app-button {
+      // stylizes the buttons
+      
+      width: calc(50% - 10px);
+      // makes it half the screen
+      
+      margin: 0 5px;
+      // adds the 5 pixels
+      
+    }
+    
+    .tdr-app-circle-button {
+      // this stylizes the circle buttons
+      
+      margin: 0 4px;
+      // adds horizontal invisible padding
+      
+      &:hover {
+        // checks if the user
+        
+        box-shadow: none;
+        // removes the shadow
+        
+      }
+      
+    }
+    
+  }
+  
+  .tdr-schedule-app-page-container {
+    // this stylizes the application container
+    
+    box-shadow: none;
+    // this removes the shadow
+    
+    padding: 0;
+    // this removes the padding of the item
+    
+    height: calc(100% - 75px);
+    // this sets the height based on the frame
+    
+    overflow: scroll;
+    // this disables scrolling or elements going beyond the container
+    
+    
+    
+    .tdr-schedule-app-table-container {
+      // stylizes the table frame
+      
+      // width: 100%;
+      // sets the width as full screen
+      
+      // height: 100%;
+      // sets the width as full screen
+      
+      // overflow: scroll;
+      // this allows scrolling
+      
+      margin: 10px;
+      // adds invisible padding
+      
+      .tdr-app-button {
+        // this stylizes the add button
+        
+        margin: 15px calc(50% - 87px);
+        // this adds the button
+      }
+      
+    }
+    
+    .tdr-schedule-app-table {
+      // stylizes the table
+      
+      // display: grid;
+      // allows grid display
+      
+      // grid-template-columns: repeat(5, 1fr);
+      // puts in 5 columns
+      
+      // gap: 10px;
+      // this adds 5 pixel
+      
+      // grid-auto-rows: minmax(100px, auto);
+      // puts minimum amount of space
+      
+      .tdr-schedule-app-table-row {
+        // stylizes the row
+        
+        display: flex;
+        // allows horizontal
+        
+        height: 120px;
+        // sets a fixed height
+        
+        .tdr-schedule-app-table-row-item {
+          // stylizes table row items
+          
+          display: flex;
+          // allows horizontal
+          
+          width: calc(100% - 36px);
+          // makes the width fit
+          
+          overflow: scroll;
+          // scrolls down
+        }
+        
+      }
+      
+      .tdr-schedule-app-table-item {
+        // stylizes individual items
+        
+        width: 100%;
+        // makes it fit normally
+        
+        margin: 4px;
+        // adds invisible padding
+        
+        &:active {
+          // when item is clicked
+          
+          box-shadow: none;
+          // removes the shadow
+        }
+        
+        .tdr-app-circle-button {
+          // stylizes circle buttons
+          
+          cursor: pointer;
+          // allows clicking form
+          
+          opacity: 0;
+          // makes it transparent
+          
+        }
+        
+        &:hover {
+          // checks if the user is clicking
+          
+          .tdr-app-circle-button {
+            // stylizes circle buttons
+            
+            opacity: 1;
+            // makes it show
+            
+          }
+          
+        }
+        
+      }
+      
+    }
+    
+  }
+  
+}

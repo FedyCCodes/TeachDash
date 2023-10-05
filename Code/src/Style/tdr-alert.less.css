@@ -1,0 +1,35 @@
+/* line 3, input */
+body #root .tdr-alert-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #484848b8;
+  transition: 0.3s;
+  overflow: hidden;
+}
+/* line 26, input */
+body #root .tdr-alert-fill .tdr-alert-container {
+  width: 250px;
+}
+/* line 34, input */
+body #root .tdr-alert-fill .tdr-alert-container-header {
+  text-align: center;
+}
+/* line 45, input */
+body #root .tdr-alert-fill .tdr-alert-container-footer .tdr-app-button {
+  width: 110px;
+}
+/* line 54, input */
+body #root .tdr-alert-fill .tdr-alert-container-body {
+  margin: 10px 0;
+  height: 150px;
+  overflow: scroll;
+}
+/* line 67, input */
+body #root .tdr-alert-fill .tdr-alert-container-header,
+body #root .tdr-alert-fill .tdr-alert-container-body,
+body #root .tdr-alert-fill .tdr-alert-container-footer {
+  box-shadow: none;
+}

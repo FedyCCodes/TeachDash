@@ -1,0 +1,247 @@
+// style.less
+
+body #root .tdr-app-container .tdr-app-page-container .tdr-report-card-app {
+  // stylizes the application
+  
+  height: 100%;
+  // makes the height full size
+  
+  width: 100%;
+  // makes the width full size
+  
+  @headerHeight: 32px;
+  // defines the header height
+  
+  @navigationWidth: 200px;
+  // defines the width
+  
+  @setPadding: 24px;
+  // defines the padding difference
+  
+  @bodyHeight: 40%; // 350px
+  // defines the height of the body
+  
+  .tdr-report-card-app-left-layout {
+    // stylizes for the left layout
+    
+    height: 100%;
+    // makes the height full size
+    
+    width: 100%;
+    // makes the width full size
+    
+    .tdr-report-card-app-header {
+      // this stylizes the header of the app
+      
+      position: absolute;
+      // uses the x and y position
+      
+      left: calc(@setPadding / 2);
+      top: calc(@setPadding / 2);
+      // puts it in top left corner
+      
+      height: @headerHeight;
+      // sets a fixed height
+      
+      right: calc(@setPadding / 2);
+      // puts it at the right
+      
+    }
+    
+    .tdr-report-card-app-navigation {
+      // this stylizes the sentences of the app
+      
+      position: absolute;
+      // uses the x and y position
+      
+      left: calc(@setPadding / 2);
+      top: calc(@headerHeight + calc(@setPadding * 2));
+      // puts it in top left corner
+      
+      bottom: calc(@setPadding / 2);
+      // puts it at the bottom
+      
+      width: @navigationWidth;
+      // makes it fit the whole screen
+      
+      overflow-y: scroll;
+      // allows the y
+      
+      .tdr-report-card-app-navigation-item-textarea {
+        // stylizes the text area
+        
+        width: calc(100% - 40px);
+        // makes a clean width
+        
+        height: calc(100% - 84px);
+        // makes a clean height
+        
+      }
+      
+      .tdr-report-card-app-navigation-item-edit {
+        // stylizes the sentences
+        
+        display: flex;
+        // connects it to the buttons
+        
+        .tdr-app-circle-button {
+          // stylizes the editing buttons
+          
+          margin-top: 10px;
+          // adds some padding for layout
+          
+        }
+        
+      }
+      
+    }
+    
+    .tdr-report-card-app-body {
+      // this stylizes the body of the app
+      
+      position: absolute;
+      // uses the x and y position
+      
+      left: calc(@navigationWidth + calc(@setPadding * 2));
+      top: calc(@headerHeight + calc(@setPadding * 2));
+      // puts it in top left corner
+      
+      bottom: calc(@setPadding / 2);
+      // puts it at the bottom
+      
+      right: calc(@setPadding / 2);
+      // puts it at the right
+      
+    }
+    
+  }
+  
+  .tdr-report-card-app-bottom-layout {
+    // stylizes for the bottom layout
+    
+    height: 100%;
+    // makes the height full size
+    
+    width: 100%;
+    // makes the width full size
+    
+    .tdr-report-card-app-header {
+      // this stylizes the header of the app
+      
+      position: absolute;
+      // uses the x and y position
+      
+      left: calc(@setPadding / 2);
+      top: calc(@setPadding / 2);
+      // puts it in top left corner
+      
+      height: @headerHeight;
+      // sets a fixed height
+      
+      right: calc(@setPadding / 2);
+      // puts it at the right
+      
+    }
+    
+    .tdr-report-card-app-navigation {
+      // this stylizes the sentences of the app
+      
+      position: absolute;
+      // uses the x and y position
+      
+      left: calc(@setPadding / 2);
+      height: calc(@bodyHeight - 50px);
+      // puts it in top left corner
+      
+      bottom: calc(@setPadding / 2);
+      // puts it at the bottom
+      
+      right: calc(@setPadding / 2);
+      // makes it fit the whole screen
+      
+      overflow-y: scroll;
+      // allows the y
+      
+      .tdr-report-card-app-navigation-item-edit {
+        // stylizes the sentences
+        
+        width: 100px;
+        // makes the width proportional to the size
+        
+        display: inline-flex;
+        // connects it to the buttons
+      }
+      
+      .tdr-report-card-app-navigation-item-sentence {
+        // stylizes the sentences
+        
+        width: calc(100% - 100px);
+        // makes the width proportional to the size
+        
+        display: inline-block;
+        // connects it to the buttons
+      }
+      
+      .tdr-report-card-app-navigation-item-textarea {
+        // stylizes the text area
+        
+        width: calc(100% - 140px);
+        // makes a clean width
+        
+        height: calc(100% - 44px);
+        // makes a clean height
+        
+      }
+      
+    }
+    
+    .tdr-report-card-app-body {
+      // this stylizes the body of the app
+      
+      position: absolute;
+      // uses the x and y position
+      
+      left: calc(@setPadding / 2);
+      top: calc(@headerHeight + calc(@setPadding * 2));
+      // puts it in top left corner
+      
+      bottom: calc(calc(@setPadding / 2) + @bodyHeight);
+      // puts it at the bottom
+      
+      right: calc(@setPadding / 2);
+      // puts it at the right
+      
+    }
+    
+  }
+  
+  .tdr-report-card-app-navigation  .tdr-report-card-app-navigation-item-textarea {
+    // stylizes the text area
+    
+    top: 10px;
+    // puts it at the top
+    
+    left: 10px;
+    // puts it at the left
+    
+  }
+  
+}
+
+body #root .tdr-app-container .report-card-app-drag-drop {
+  // the drag and drop
+  
+  position: absolute;
+  // puts in a position
+  
+  top: 0;
+  left: 0;
+  // puts it at top left
+  
+  transform: translate(-50%, -50%);
+  // makes it center
+  
+  transition: none;
+  // disables smoothing
+  
+}

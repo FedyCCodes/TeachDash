@@ -1,0 +1,306 @@
+// style.less
+
+
+@media (max-width: 800px) { 
+  // changes when the screen size is less then 700 */
+  
+  .tdr-repository-widget {
+    // stylizes the widget
+    
+    .tdr-repository-widget-body {
+      // stylizes the body
+      
+      .tdr-repository-widget-body-item {
+        // stylizes the body items
+        
+        border: none;
+        // removes the outline
+        
+        display: inline-block;
+        // makes the elements next to each other
+        
+        width: calc(50% - 30px);
+        // sets a width of half the thing
+        
+        height: calc(100% - 25px);
+        // puts in a fixed height
+        
+        margin-right: 10px;
+        // puts in padding at the bottom
+        
+      }
+      
+    }
+    
+  }
+  
+}
+
+@media (min-width: 800px) { 
+  // changes when the screen size is bigger then 700 */
+  
+  .tdr-repository-widget {
+    // stylizes the widget
+    
+    .tdr-repository-widget-body {
+      // stylizes the body
+      
+      .tdr-repository-widget-body-item {
+        // stylizes the body items
+        
+        border: none;
+        // removes the outline
+        
+        height: calc(50% - 25px);
+        // puts in a fixed height
+        
+        margin-bottom: 10px;
+        // puts in padding at the bottom
+        
+      }
+      
+    }
+    
+  }
+  
+}
+
+
+body #root .tdr-app-container .tdr-app-page-container .tdr-repository-app {
+  // stylizes the application
+  
+  height: 100%;
+  // makes the height full size
+  
+  width: 100%;
+  // makes the width full size
+  
+  .tdr-repository-app-header {
+    // this stylizes the application header
+    
+    display: flex;
+    // puts it horizontal
+    
+    box-shadow: none;
+    // this removes the shadow
+    
+    margin-bottom: 10px;
+    // adds invisible padding to the bottom
+    
+    height: 35px;
+    // adds a height of 35 pixels
+    
+    .tdr-app-button {
+      // stylizes the buttons
+      
+      width: calc(50% - 10px);
+      // makes it half the screen
+      
+      margin: 0 5px;
+      // adds the 5 pixels
+      
+    }
+    
+    .tdr-app-circle-button {
+      // this stylizes the circle buttons
+      
+      margin: 0 4px;
+      // adds horizontal invisible padding
+      
+      &:hover {
+        // checks if the user
+        
+        box-shadow: none;
+        // removes the shadow
+        
+      }
+      
+    }
+    
+  }
+  
+  
+  .tdr-repository-app-body-show-preview {
+    // a class for when the preview is opened
+    
+    .tdr-repository-app-body-container, .tdr-repository-app-body-preview {
+      // the container for the item
+      
+      width: calc(50% - 29px);
+      // sets the width spaced out
+      
+    }
+    
+  }
+  
+  .tdr-repository-app-body-hide-preview {
+    // a class for when the preview is opened
+    
+    .tdr-repository-app-body-preview {
+      // the container for the item
+      
+      width: 0;
+      // removes the width
+      
+      border: 0px;
+      // removes the border
+      
+      margin-left: 0px;
+      // removes the spacing on the left
+      
+      padding: 0;
+      // removes the padding
+      
+    }
+    
+  }
+  
+  // tdr-repository-app-body tdr-repository-app-body-container-list
+  .tdr-repository-app-body {
+    // this stylizes the application container
+    
+    box-shadow: none;
+    // this removes the shadow
+    
+    padding: 0;
+    // this removes the padding of the item
+    
+    height: calc(100% - 75px);
+    // this sets the height based on the frame
+    
+    display: flex;
+    // makes the two items inside horizontal
+    
+    justify-content: space-between;
+    // puts space between the two containers
+    
+    width: 100%;
+    // sets the whole width
+    
+    overflow: scroll;
+    // this disables scrolling or elements going beyond the container
+    
+    .tdr-repository-app-body-container, .tdr-repository-app-body-preview {
+      // the container for the item
+      
+      height: calc(100% - 24px);
+      // sets the height
+      
+      overflow: scroll;
+      // allows scrolling
+      
+    }
+    
+    .tdr-repository-app-body-container-grid {
+      // stylizes the app in grid mode
+      
+      .tdr-repository-app-body-item {
+        // stylizes individual items
+        
+        //height: 100px;
+        width: 100px;
+        // sets a fixed size
+        
+        display: inline-block;
+        // allows a grid like layout
+        
+        text-align: center;
+        // makes the text in the center
+        
+        .tdr-app-circle-button {
+          // stylizes the circle button
+          
+          svg, img {
+            // stylizes the images for that
+            
+            height: 64%;
+            // puts it at 64 percent instead
+            
+          }
+          
+        }
+        
+        svg, img {
+          // stylizes images
+          
+          margin: auto;
+          // makes it in between
+          
+          height: 64px;
+          // sets a size based on the file item
+          
+          
+        }
+        
+      }
+      
+    }
+    
+    .tdr-repository-app-body-item {
+      // stylizes individual items
+      
+      border: none;
+      // removes the border inherited from the default-style class
+      
+      padding: 5px;
+      // adds in 5 pixels of padding
+      
+      margin: 5px;
+      // adds in 5 pixels of invisible padding
+      
+      overflow: scroll;
+      // removes any bleeding elements
+      
+      p {
+        // stylizes the text
+        
+        font-size: 15px;
+        // shrinks the font a bit
+      }
+      
+      
+    }
+    
+  }
+  
+}
+
+body #root .tdr-repository-widget, body #root .tdr-app-container .tdr-app-page-container .tdr-repository-app .tdr-repository-app-body {
+  
+  .tdr-repository-app-body-container-list {
+    // stylizes the app in list mode
+    
+    .tdr-repository-app-body-item {
+      // stylizes individual items
+      
+      height: 32px;
+      // sets a fixed size
+      
+      p {
+        // stylizes the text
+        
+        display: inline-block;
+        // puts the text next to the image
+        
+        transform: translateY(-10px);
+        // moves it a little bit down
+        
+        margin-left: 5px;
+        // adds invisible padding to the left
+        
+      }
+      
+      svg, img {
+        // stylizes images
+        
+        height: 100%;
+        // sets a size based on the file item
+        
+        
+      }
+      
+    }
+    
+  }
+  
+}

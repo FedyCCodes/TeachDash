@@ -1,0 +1,72 @@
+// tdr-app-class-item.less
+
+body #root .tdr-app-container {
+  // stylizes the root element */
+  
+  .tdr-app-page-app-classes {
+    // stylizes the classes */
+    
+    overflow: scroll;
+    // allows scrolling */
+  }
+  
+  .tdr-app-page-home .tdr-app-class-item .tdr-app-circle-button {
+    // this stylizes the circle button of the classes*/
+    
+    margin-top: 5px;
+    // adds an invisible button */
+    
+    opacity: 0;
+    // makes it transparent */
+    
+    transition: 0.3s;
+    // allows smooth changes */
+    
+    &:hover {
+      // when the user is hover the button */
+      
+      
+      box-shadow: none;
+      // removes the shadow */
+      
+    }
+    
+  }
+  
+  .tdr-app-class-item {
+    // stylizes the individual items */
+    
+    color: white;
+    // makes text color white */
+    
+    margin: 5px;
+    // adds some invisible padding */
+    
+    cursor: pointer;
+    // puts in the clicker system
+    
+    // height: 80px;
+    // sets a fixed height */
+    
+    margin-bottom: 15px;
+    // adds extra padding at the bottom */
+    
+    h1 {
+      // stylizes the title of the item */
+      
+      font-size: larger;
+      // shrinks the size of the text */
+      
+    }
+    
+    &:hover .tdr-app-circle-button {
+      // this stylizes the buttons when the user is hovering it */
+      
+      opacity: 1;
+      // makes it transparent */
+      
+    }
+    
+  }
+  
+}

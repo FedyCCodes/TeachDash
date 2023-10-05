@@ -1,0 +1,136 @@
+/* line 21, input */
+.default-style-glass {
+  /*
+  -webkit-backdrop-filter: saturate(180%)blur(8px);
+  backdrop-filter: saturate(180%)blur(8px);
+  */
+}
+/* line 32, input */
+.light-style,
+.dark-style,
+.default-style,
+.system-style {
+  transition: 0.3s;
+  border-radius: 10px;
+  padding: 10px;
+}
+/* line 46, input */
+.dark-style {
+  color: #ffffff;
+  stroke: #2e2e2f;
+  background-color: #2e2e2f;
+  border: 2px solid #131416;
+}
+/* line 66, input */
+.light-style,
+.default-style {
+  color: #2e2e2f;
+  stroke: #ffffff;
+  background-color: #ffffff;
+  border: 2px solid #e0e7f5;
+}
+@media (prefers-color-scheme: light) {
+  /* line 88, input */
+  .polyline-stroke {
+    stroke: #2e2e2f;
+  }
+  /* line 95, input */
+  body,
+  .default-style,
+  .default-style-no-add,
+  .system-style {
+    color: #2e2e2f;
+    stroke: #ffffff;
+    background-color: #ffffff;
+  }
+  /* line 109, input */
+  #root {
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  }
+  /* line 116, input */
+  .default-style-glass {
+    background: #ffffffb8;
+  }
+  /* line 123, input */
+  .default-style,
+  .system-style {
+    border: 2px solid #e0e7f5;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  /* line 138, input */
+  .polyline-stroke {
+    stroke: #ffffff;
+  }
+  /* line 145, input */
+  body,
+  .default-style,
+  .default-style-no-add,
+  .system-style {
+    color: #ffffff;
+    stroke: #2e2e2f;
+    background-color: #2e2e2f;
+  }
+  /* line 158, input */
+  #root {
+    background: linear-gradient(to right top, #009a7d, #027788);
+  }
+  /* line 165, input */
+  .default-style-glass {
+    background: #2e2e2fb8;
+  }
+  /* line 172, input */
+  .default-style,
+  .system-style {
+    border: 2px solid #131416;
+  }
+}
+/* line 184, input */
+.body-dark {
+  color: #ffffff;
+  background: linear-gradient(to right top, #009a7d, #027788);
+}
+/* line 190, input */
+.body-dark .polyline-stroke {
+  stroke: #ffffff;
+}
+/* line 197, input */
+.body-dark .default-style,
+.body-dark .default-style-no-add {
+  color: #ffffff;
+  stroke: #2e2e2f;
+  background-color: #2e2e2f;
+}
+/* line 211, input */
+.body-dark .default-style-glass {
+  background: #2e2e2fb8;
+}
+/* line 218, input */
+.body-dark .default-style {
+  box-shadow: -5px -5px 20px #26282d8f, 5px 5px 20px #0000008f;
+  border: 2px solid #131416;
+}
+/* line 234, input */
+.body-light {
+  color: #2e2e2f;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+}
+/* line 240, input */
+.body-light .polyline-stroke {
+  stroke: #2e2e2f;
+}
+/* line 247, input */
+.body-light .default-style,
+.body-light .default-style-no-add {
+  color: #2e2e2f;
+  stroke: #ffffff;
+  background-color: #ffffff;
+}
+/* line 272, input */
+.body-light .default-style-glass {
+  background: #ffffffb8;
+}
+/* line 279, input */
+.body-light .default-style {
+  border: 2px solid #e0e7f5;
+}

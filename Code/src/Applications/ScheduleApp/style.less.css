@@ -1,0 +1,112 @@
+/* line 9, input */
+.tdr-schedule-widget .tdr-schedule-widget-body .tdr-schedule-widget-body-item {
+  border: none;
+}
+@media (max-width: 800px) {
+  /* line 31, input */
+  .tdr-schedule-widget .tdr-schedule-widget-body .tdr-schedule-widget-body-item {
+    border: none;
+    display: inline-block;
+    width: calc(50% - 30px);
+    height: calc(100% - 25px);
+    margin-right: 10px;
+  }
+}
+@media (min-width: 800px) {
+  /* line 66, input */
+  .tdr-schedule-widget .tdr-schedule-widget-body .tdr-schedule-widget-body-item {
+    border: none;
+    height: calc(50% - 25px);
+    margin-bottom: 10px;
+  }
+}
+/* line 90, input */
+body #root .tdr-app-container .tdr-app-schedule-app-id .tdr-app-class-item {
+  overflow: hidden;
+  /*&:active {
+      // the click item
+      
+      height: 0;
+      // shrinks height
+      
+      padding: 0;
+      // removes the padding
+      
+    }*/
+}
+/* line 111, input */
+body #root .tdr-app-container .tdr-schedule-app-drag-drop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  transition: none;
+}
+/* line 129, input */
+body #root .tdr-app-container .tdr-app-page-container .tdr-schedule-app {
+  height: 100%;
+  width: 100%;
+}
+/* line 138, input */
+body #root .tdr-app-container .tdr-app-page-container .tdr-schedule-app .tdr-schedule-app-header {
+  box-shadow: none;
+  margin-bottom: 10px;
+  height: 35px;
+}
+/* line 150, input */
+body #root .tdr-app-container .tdr-app-page-container .tdr-schedule-app .tdr-schedule-app-header .tdr-app-button {
+  width: calc(50% - 10px);
+  margin: 0 5px;
+}
+/* line 161, input */
+body #root .tdr-app-container .tdr-app-page-container .tdr-schedule-app .tdr-schedule-app-header .tdr-app-circle-button {
+  margin: 0 4px;
+}
+/* line 167, input */
+body #root .tdr-app-container .tdr-app-page-container .tdr-schedule-app .tdr-schedule-app-header .tdr-app-circle-button:hover {
+  box-shadow: none;
+}
+/* line 179, input */
+body #root .tdr-app-container .tdr-app-page-container .tdr-schedule-app .tdr-schedule-app-page-container {
+  box-shadow: none;
+  padding: 0;
+  height: calc(100% - 75px);
+  overflow: scroll;
+}
+/* line 196, input */
+body #root .tdr-app-container .tdr-app-page-container .tdr-schedule-app .tdr-schedule-app-page-container .tdr-schedule-app-table-container {
+  margin: 10px;
+}
+/* line 211, input */
+body #root .tdr-app-container .tdr-app-page-container .tdr-schedule-app .tdr-schedule-app-page-container .tdr-schedule-app-table-container .tdr-app-button {
+  margin: 15px calc(50% - 87px);
+}
+/* line 235, input */
+body #root .tdr-app-container .tdr-app-page-container .tdr-schedule-app .tdr-schedule-app-page-container .tdr-schedule-app-table .tdr-schedule-app-table-row {
+  display: flex;
+  height: 120px;
+}
+/* line 244, input */
+body #root .tdr-app-container .tdr-app-page-container .tdr-schedule-app .tdr-schedule-app-page-container .tdr-schedule-app-table .tdr-schedule-app-table-row .tdr-schedule-app-table-row-item {
+  display: flex;
+  width: calc(100% - 36px);
+  overflow: scroll;
+}
+/* line 259, input */
+body #root .tdr-app-container .tdr-app-page-container .tdr-schedule-app .tdr-schedule-app-page-container .tdr-schedule-app-table .tdr-schedule-app-table-item {
+  width: 100%;
+  margin: 4px;
+}
+/* line 268, input */
+body #root .tdr-app-container .tdr-app-page-container .tdr-schedule-app .tdr-schedule-app-page-container .tdr-schedule-app-table .tdr-schedule-app-table-item:active {
+  box-shadow: none;
+}
+/* line 275, input */
+body #root .tdr-app-container .tdr-app-page-container .tdr-schedule-app .tdr-schedule-app-page-container .tdr-schedule-app-table .tdr-schedule-app-table-item .tdr-app-circle-button {
+  cursor: pointer;
+  opacity: 0;
+}
+/* line 289, input */
+body #root .tdr-app-container .tdr-app-page-container .tdr-schedule-app .tdr-schedule-app-page-container .tdr-schedule-app-table .tdr-schedule-app-table-item:hover .tdr-app-circle-button {
+  opacity: 1;
+}

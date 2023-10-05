@@ -1,0 +1,197 @@
+// tdr-app-circle-loading.less */
+
+.tdr-app-circle-loading {
+  // this stylizes the loading circles */
+  
+  display: inline-block;
+  // makes it remain next to each other if there are some */
+  
+  width: 80px;
+  // makes it a fixed width of 80 pixels */
+  
+  height: 80px;
+  // makes it a fixed height of 80 pixels */
+  
+  margin: 15px;
+  // gives it some invisible padding */
+  
+  border-radius: 50%;
+  // makes the element into a circle */
+  
+  transition: 0.3s;
+  // makes changes in the css smooth by 300 milliseconds */
+  
+  padding: 0;
+  // makes the padding 0 */
+  
+  &:hover {
+    // this is called when the mouse is near the circle */
+    
+    box-shadow: none;
+    // removes the box shadow of the circle */
+    
+    width: 70px;
+    // makes it a fixed width of 70 pixels */
+    
+    height: 70px;
+    // makes it a fixed height of 70 pixels */
+    
+    margin: 20px;
+    // increases the invisible padding to compensate for the shrunken size */
+  }
+  
+  .tdr-app-circle-loading-container {
+    // stylizes the container */
+    
+    position: relative; 
+    // allows width and height to fit */
+    
+    width: 100%; 
+    // makes the width the full size */
+    
+    height: 100%;
+    // makes the height the full size */
+    
+    .tdr-app-circle-loading-ring {
+      // stylizes the ring of the loading element */
+      
+      position: absolute;
+      // makes it move based on x and y */
+      
+      top: 50%;
+      // moves it 50% down */
+      
+      left: 50%;
+      // moves it 50% right */
+      
+      transform: translate(-50%, -50%);
+      // moves it towards the center */
+      
+      width: 66.66%;
+      // makes the width 2/3 */
+      
+      height: 66.66%;
+      // makes the height 2/3 */
+      
+      border-radius: 50%;
+      // turns the element into a circle */
+      
+    }
+    
+    .tdr-app-circle-loading-svg {
+      
+      position: absolute;
+      // makes it move based on x and y */
+      
+      top: 15.625%;
+      // moves it 15% down */
+      
+      left: 15.625%;
+      // moves it 15% right */
+      
+      bottom: 0;
+      // puts the bottom as 0 to stretch it */
+      
+      right: 0;
+      // puts the right as 0 to stretch it */
+      
+      width: 68.75%;
+      // sets a fixed width based on the size */
+      
+      height: 68.75%;
+      // sets a fixed height ased on the size */
+      
+      border-radius: 50%;
+      // makes the element into a circle */
+      
+      animation: tdr-app-circle-loading-spin 2s linear infinite;
+      // moves the animation */
+    }
+    
+    .tdr-app-circle-loading-fill {
+      // stylizes the filling circle of the loading */
+      
+      position: absolute;
+      // makes it move based on x and y */
+      
+      top: 50%;
+      // moves it 50% down */
+      
+      left: 50%;
+      // moves it 50% right */
+      
+      transform: translate(-50%, -50%);
+      // moves it towards the center */
+      
+      width: 52.083%;
+      // sets a fixed width based on the size */
+      
+      height: 52.083%;
+      // sets a fixed height ased on the size */
+      
+      border-radius: 50%;
+      // makes the element into a circle */
+      
+      transition: width 0.3s, height 0.3s;
+      // makes the change in size */
+    }
+    
+    .tdr-app-circle-loading-svg-path {
+      // stylizes the path item */
+      
+      fill: none;
+      // removes any filled color */
+      
+      stroke-width: 10px;
+      // makes the line super wide */
+      
+      animation: progress 1s ease-out forwards;
+      // activates the animation */
+    }
+    
+    .tdr-app-circle-loading-ionicon {
+      // stylizes the svg icon */
+      
+      position: absolute;
+      // makes it move based on x and y */
+      
+      top: 50%;
+      // moves it 50% down */
+      
+      left: 50%;
+      // moves it 50% right */
+      
+      transform: translate(-50%, -50%);
+      // moves it towards the center */
+      
+      width: 0;
+      // removes the width */
+      
+      height: 0;
+      // removes the height */
+      
+      opacity: 0;
+      // makes it transparent */
+      
+      border-radius: 50%;
+      // makes it in a circle */
+      
+      transition: width 0.4s, height 0.4s, opacity 0.2s;
+      // makes the change in size and transparency smooth */
+    }
+    
+    @keyframes tdr-app-circle-loading-spin {
+      // creates the animation for the loading ring */
+      
+      0% { transform: rotate(0deg); }
+      // at start it makes it at 0 degrees */
+      
+      100% { transform: rotate(360deg); }
+      // at start it makes it at 360 degrees */
+    }
+    
+  }
+  
+  
+  
+}

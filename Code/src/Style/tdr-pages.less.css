@@ -1,0 +1,192 @@
+/* line 3, input */
+body {
+  margin: 0;
+}
+/* line 9, input */
+body #root {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-family: Roboto;
+}
+/* line 24, input */
+body #root .tdr-app-container,
+body #root .tdr-app-container-hide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+/* line 51, input */
+body #root .tdr-app-container h1,
+body #root .tdr-app-container-hide h1,
+body #root .tdr-app-container h2,
+body #root .tdr-app-container-hide h2,
+body #root .tdr-app-container p,
+body #root .tdr-app-container-hide p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-weight: lighter;
+}
+/* line 65, input */
+body #root .tdr-app-container h1,
+body #root .tdr-app-container-hide h1 {
+  font-size: 112px;
+}
+/* line 73, input */
+body #root .tdr-app-container h2,
+body #root .tdr-app-container-hide h2 {
+  font-size: 32px;
+}
+/* line 81, input */
+body #root .tdr-app-container p,
+body #root .tdr-app-container-hide p,
+body #root .tdr-app-container button,
+body #root .tdr-app-container-hide button {
+  font-size: 18px;
+}
+/* line 89, input */
+body #root .tdr-app-container .tdr-app-header,
+body #root .tdr-app-container-hide .tdr-app-header {
+  width: calc(100% - (20px * 3));
+  margin: 20px auto;
+  height: 36px;
+  border: none;
+  overflow: hidden;
+  transition: 0.3s;
+}
+/* line 112, input */
+body #root .tdr-app-container .tdr-app-pages,
+body #root .tdr-app-container-hide .tdr-app-pages {
+  width: calc(100%);
+  height: calc(100% - (45px + (20px * 2)));
+  margin-top: 20px;
+  transition: 0.3s;
+  position: relative;
+}
+/* line 131, input */
+body #root .tdr-app-container .tdr-app-page,
+body #root .tdr-app-container-hide .tdr-app-page {
+  width: calc(100% - (20px * 2));
+  height: calc(100% - 32px);
+  margin: 20px;
+  margin-top: 0;
+  position: absolute;
+  border: none;
+  padding: 0;
+  transition: 0.3s;
+}
+/* line 161, input */
+body #root .tdr-app-container .tdr-app-page .tdr-app-page-container,
+body #root .tdr-app-container-hide .tdr-app-page .tdr-app-page-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+/* line 177, input */
+body #root .tdr-app-container .tdr-app-page-welcome,
+body #root .tdr-app-container-hide .tdr-app-page-welcome {
+  border: none;
+  padding: 0;
+  left: 0;
+}
+/* line 189, input */
+body #root .tdr-app-container .tdr-app-page-welcome .tdr-app-page-welcome-start,
+body #root .tdr-app-container-hide .tdr-app-page-welcome .tdr-app-page-welcome-start {
+  padding: 8px 24px;
+  font-size: 22px;
+}
+/* line 201, input */
+body #root .tdr-app-container .tdr-app-page-loading,
+body #root .tdr-app-container-hide .tdr-app-page-loading {
+  left: 100%;
+}
+/* line 209, input */
+body #root .tdr-app-container .tdr-app-page-home,
+body #root .tdr-app-container-hide .tdr-app-page-home {
+  left: 100%;
+}
+/* line 215, input */
+body #root .tdr-app-container .tdr-app-page-home .tdr-app-page-home-classes,
+body #root .tdr-app-container-hide .tdr-app-page-home .tdr-app-page-home-classes {
+  height: calc(100% - 20px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  overflow: scroll;
+}
+/* line 237, input */
+body #root .tdr-app-container .tdr-app-page-home .tdr-app-page-home-widgets,
+body #root .tdr-app-container-hide .tdr-app-page-home .tdr-app-page-home-widgets {
+  height: calc(100% - 170px);
+  position: absolute;
+  top: 0;
+  left: 240px;
+  width: calc(100% - 260px);
+  overflow: scroll;
+}
+/* line 259, input */
+body #root .tdr-app-container .tdr-app-page-home .tdr-app-page-home-apps,
+body #root .tdr-app-container-hide .tdr-app-page-home .tdr-app-page-home-apps {
+  height: 110px;
+  position: absolute;
+  bottom: 0;
+  left: 240px;
+  width: calc(100% - 260px);
+}
+/* line 280, input */
+body #root .tdr-app-container .tdr-app-page-home-hide .tdr-app-page-home-components,
+body #root .tdr-app-container-hide .tdr-app-page-home-hide .tdr-app-page-home-components {
+  width: 0;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+/* line 297, input */
+body #root .tdr-app-container .tdr-app-page-app,
+body #root .tdr-app-container-hide .tdr-app-page-app {
+  left: 200%;
+}
+/* line 330, input */
+body #root .tdr-app-container .tdr-app-hidden-header,
+body #root .tdr-app-container-hide .tdr-app-hidden-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 0;
+  opacity: 0;
+  transition: 0.3s;
+  overflow: hidden;
+}
+/* line 357, input */
+body #root .tdr-app-container .tdr-app-hidden-header .tdr-app-hidden-header-zoom-out,
+body #root .tdr-app-container-hide .tdr-app-hidden-header .tdr-app-hidden-header-zoom-out {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+/* line 379, input */
+body #root .tdr-app-pages-full-screen .tdr-app-header {
+  transform: translateY(-96px);
+}
+/* line 387, input */
+body #root .tdr-app-pages-full-screen .tdr-app-hidden-header {
+  top: 0;
+  opacity: 0;
+  height: 10px;
+  overflow: visible;
+}
+/* line 399, input */
+body #root .tdr-app-pages-full-screen .tdr-app-hidden-header:hover {
+  opacity: 1;
+}
+/* line 412, input */
+body #root .tdr-app-pages-full-screen .tdr-app-pages {
+  height: calc(100% + 30px);
+  transform: translate(-20px, -96px);
+  width: calc(100% + 40px);
+}

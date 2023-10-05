@@ -1,0 +1,118 @@
+@media (max-width: 800px) {
+  /* line 13, input */
+  .tdr-repository-widget .tdr-repository-widget-body .tdr-repository-widget-body-item {
+    border: none;
+    display: inline-block;
+    width: calc(50% - 30px);
+    height: calc(100% - 25px);
+    margin-right: 10px;
+  }
+}
+@media (min-width: 800px) {
+  /* line 48, input */
+  .tdr-repository-widget .tdr-repository-widget-body .tdr-repository-widget-body-item {
+    border: none;
+    height: calc(50% - 25px);
+    margin-bottom: 10px;
+  }
+}
+/* line 69, input */
+body #root .tdr-app-container .tdr-app-page-container .tdr-repository-app {
+  height: 100%;
+  width: 100%;
+}
+/* line 78, input */
+body #root .tdr-app-container .tdr-app-page-container .tdr-repository-app .tdr-repository-app-header {
+  display: flex;
+  box-shadow: none;
+  margin-bottom: 10px;
+  height: 35px;
+}
+/* line 93, input */
+body #root .tdr-app-container .tdr-app-page-container .tdr-repository-app .tdr-repository-app-header .tdr-app-button {
+  width: calc(50% - 10px);
+  margin: 0 5px;
+}
+/* line 104, input */
+body #root .tdr-app-container .tdr-app-page-container .tdr-repository-app .tdr-repository-app-header .tdr-app-circle-button {
+  margin: 0 4px;
+}
+/* line 110, input */
+body #root .tdr-app-container .tdr-app-page-container .tdr-repository-app .tdr-repository-app-header .tdr-app-circle-button:hover {
+  box-shadow: none;
+}
+/* line 126, input */
+body #root .tdr-app-container .tdr-app-page-container .tdr-repository-app .tdr-repository-app-body-show-preview .tdr-repository-app-body-container,
+body #root .tdr-app-container .tdr-app-page-container .tdr-repository-app .tdr-repository-app-body-show-preview .tdr-repository-app-body-preview {
+  width: calc(50% - 29px);
+}
+/* line 139, input */
+body #root .tdr-app-container .tdr-app-page-container .tdr-repository-app .tdr-repository-app-body-hide-preview .tdr-repository-app-body-preview {
+  width: 0;
+  border: 0px;
+  margin-left: 0px;
+  padding: 0;
+}
+/* line 159, input */
+body #root .tdr-app-container .tdr-app-page-container .tdr-repository-app .tdr-repository-app-body {
+  box-shadow: none;
+  padding: 0;
+  height: calc(100% - 75px);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  overflow: scroll;
+}
+/* line 183, input */
+body #root .tdr-app-container .tdr-app-page-container .tdr-repository-app .tdr-repository-app-body .tdr-repository-app-body-container,
+body #root .tdr-app-container .tdr-app-page-container .tdr-repository-app .tdr-repository-app-body .tdr-repository-app-body-preview {
+  height: calc(100% - 24px);
+  overflow: scroll;
+}
+/* line 197, input */
+body #root .tdr-app-container .tdr-app-page-container .tdr-repository-app .tdr-repository-app-body .tdr-repository-app-body-container-grid .tdr-repository-app-body-item {
+  width: 100px;
+  display: inline-block;
+  text-align: center;
+}
+/* line 213, input */
+body #root .tdr-app-container .tdr-app-page-container .tdr-repository-app .tdr-repository-app-body .tdr-repository-app-body-container-grid .tdr-repository-app-body-item .tdr-app-circle-button svg,
+body #root .tdr-app-container .tdr-app-page-container .tdr-repository-app .tdr-repository-app-body .tdr-repository-app-body-container-grid .tdr-repository-app-body-item .tdr-app-circle-button img {
+  height: 64%;
+}
+/* line 223, input */
+body #root .tdr-app-container .tdr-app-page-container .tdr-repository-app .tdr-repository-app-body .tdr-repository-app-body-container-grid .tdr-repository-app-body-item svg,
+body #root .tdr-app-container .tdr-app-page-container .tdr-repository-app .tdr-repository-app-body .tdr-repository-app-body-container-grid .tdr-repository-app-body-item img {
+  margin: auto;
+  height: 64px;
+}
+/* line 239, input */
+body #root .tdr-app-container .tdr-app-page-container .tdr-repository-app .tdr-repository-app-body .tdr-repository-app-body-item {
+  border: none;
+  padding: 5px;
+  margin: 5px;
+  overflow: scroll;
+}
+/* line 254, input */
+body #root .tdr-app-container .tdr-app-page-container .tdr-repository-app .tdr-repository-app-body .tdr-repository-app-body-item p {
+  font-size: 15px;
+}
+/* line 273, input */
+body #root .tdr-repository-widget .tdr-repository-app-body-container-list .tdr-repository-app-body-item,
+body #root .tdr-app-container .tdr-app-page-container .tdr-repository-app .tdr-repository-app-body .tdr-repository-app-body-container-list .tdr-repository-app-body-item {
+  height: 32px;
+}
+/* line 279, input */
+body #root .tdr-repository-widget .tdr-repository-app-body-container-list .tdr-repository-app-body-item p,
+body #root .tdr-app-container .tdr-app-page-container .tdr-repository-app .tdr-repository-app-body .tdr-repository-app-body-container-list .tdr-repository-app-body-item p {
+  display: inline-block;
+  transform: translateY(-10px);
+  margin-left: 5px;
+}
+/* line 293, input */
+body #root .tdr-repository-widget .tdr-repository-app-body-container-list .tdr-repository-app-body-item svg,
+body #root .tdr-app-container .tdr-app-page-container .tdr-repository-app .tdr-repository-app-body .tdr-repository-app-body-container-list .tdr-repository-app-body-item svg,
+body #root .tdr-repository-widget .tdr-repository-app-body-container-list .tdr-repository-app-body-item img,
+body #root .tdr-app-container .tdr-app-page-container .tdr-repository-app .tdr-repository-app-body .tdr-repository-app-body-container-list .tdr-repository-app-body-item img {
+  height: 100%;
+}

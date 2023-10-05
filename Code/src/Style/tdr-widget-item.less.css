@@ -1,0 +1,35 @@
+@media (max-width: 800px) {
+  /* line 6, input */
+  body #root .tdr-app-container .tdr-widget-item {
+    height: 120px;
+  }
+  /* line 14, input */
+  body #root .tdr-app-container .tdr-app-page-home .tdr-app-page-home-widgets {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 160px;
+  }
+}
+@media (min-width: 800px) {
+  /* line 28, input */
+  body #root .tdr-app-container .tdr-widget-item {
+    height: 180px;
+  }
+  /* line 39, input */
+  body #root .tdr-app-container .tdr-app-page-home .tdr-app-page-home-widgets {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 220px;
+  }
+}
+/*
+    border: none;
+    */
+/* line 57, input */
+body #root .tdr-app-container .tdr-app-page-home .tdr-app-page-home-widgets {
+  display: grid;
+}
+/* line 65, input */
+body #root .tdr-app-container .tdr-widget-item {
+  display: inline-block;
+  width: calc(100% - 40px);
+  margin: 8px;
+}

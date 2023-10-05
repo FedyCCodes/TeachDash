@@ -1,0 +1,86 @@
+// tdr-home.less */
+
+body {
+  // this stylizes the body */
+  
+  #root {
+    // this stylizes the root element*/
+    
+    /* background: linear-gradient(to right top, #65dfc9, #6cdbeb); */
+    // sets a blue green background
+    
+    // linear-gradient(to right top, #009a7d, #027788)
+    
+    .tdr-app-container, .tdr-app-container-hide {
+      // this stylizes the app container */
+      
+      .tdr-app-page-home .tdr-app-page-home-apps {
+      // this stylizes the page for the home */
+        
+        overflow-x: scroll;
+        // this allows scrolling from side to side */
+        
+        overflow-y: hidden;
+        // this disables scrolling from top to bottom */
+        
+        .tdr-app-page-home-apps-container {
+          // stylizes the section where all the apps are stored */
+          
+          margin: 15px auto;
+          // makes it centered */
+          
+          display: flex;
+          // aligns the children horizontally */
+          
+          width: fit-content;
+          // fixes a scrolling bug */
+          
+        }
+        
+        .tdr-app-page-home-launcher {
+        // this stylizes the app launcher */
+          
+          width: 80px;
+          // the width of the app icon */
+          
+          height: 80px;
+          // the height of the app icon */
+          
+          margin-right: 15px;
+          // adds some invisible padding */
+          
+          transition: 0.3s;
+          // makes changes smooth */
+          
+          &:hover {
+            // this is called when the mouse goes near the element */
+            
+            width: 74px;
+            // decreases the width of the app icon */
+            
+            height: 74px;
+            // decreases the width of the app icon */
+            
+            margin: 3px;
+            // adds some invisible padding */
+            
+            margin-right: 18px;
+            // adds some invisible padding */
+            
+          }
+          
+          img, svg {
+            // stylizes the icon of the image */
+            
+            height: 100%;
+            // makes the icon fit */
+            
+            transform: translateX(-15%);
+            // makes it move back */
+            
+          }
+        }
+      }
+    }
+  }
+}

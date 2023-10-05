@@ -1,0 +1,429 @@
+// tdr-pages.less */
+
+body {
+  // this stylizes the body */
+  
+  margin: 0;
+  // removes the extra padding */
+  
+  #root {
+    // this stylizes the root element*/
+    
+    position: absolute;
+    // makes the width and height proportional */
+    
+    width: 100%;
+    // makes the width fill up the whole screen */
+    
+    height: 100%;
+    // makes the height fill up the whole screen */
+    
+    font-family: Roboto;
+    // makes the font roboto */
+    
+    .tdr-app-container, .tdr-app-container-hide {
+      // this stylizes the app container */
+      
+      @paddingSize: 20px;
+      // this is a variable for the padding size */
+      
+      @headerHeight: 36px;
+      // this is the variable for the fixed header size */
+      
+      position: absolute;
+      // makes the width and height proportional */
+      
+      top: 0;
+      // removes extra padding on the top */
+      
+      left: 0;
+      // removes extra padding on the left */
+      
+      width: 100%;
+      // makes the width fill up the whole screen */
+      
+      height: 100%;
+      // makes the height fill up the whole screen */
+      
+      overflow: hidden;
+      // makes it not allowed to scroll */
+      
+      h1, h2, p {
+        // stylizes all the main texts */
+        
+        margin-block-start: 0;
+        // removes the top adding from the margin */
+        
+        margin-block-end: 0;
+        // removes the bottom padding from the margin */
+        
+        font-weight: lighter;
+        // makes the font weight */
+        
+      }
+      
+      h1 {
+        // this stylizes all the major titles */
+        
+        font-size: 112px;
+        // makes the default title size huge */
+        
+      }
+      
+      h2 {
+        // this stylizes all the sub titles */
+        
+        font-size: 32px;
+        // makes a fixed size */
+        
+      }
+      
+      p, button {
+        // stylizes all the main text */
+        
+        font-size: 18px;
+        // makes the default text size */
+        
+      }
+      
+      .tdr-app-header {
+        // this stylizes the header app */
+        
+        width: calc(100% - (@paddingSize * 3));
+        // this creates the width based on the padding size */
+        
+        margin: @paddingSize auto;
+        // adds the padding to the margin */
+        
+        height: @headerHeight;
+        // gives in a fixed height */
+        
+        border: none;
+        // removes the border */
+        
+        overflow: hidden;
+        // disable scrolling ands hides anything that goes beyond the header */
+        
+        transition: 0.3s;
+        // makes movements and colors smooth */
+        
+      }
+      
+      .tdr-app-pages {
+        // this stylizes the inner app pages */
+        
+        width: calc(100%);
+        // makes the width full size */
+        
+        height: calc(100% - (45px + (@paddingSize * 2)));
+        // makes the height size based on the */
+        
+        margin-top: 20px;
+        // makes the top */
+        
+        transition: 0.3s;
+        // makes movements and colors smooth */
+        
+        position: relative;
+        // makes the object relative so it allows transformations using absolute */
+      }
+      
+      .tdr-app-page {
+        // this stylizes the individual page */
+        
+        width: calc(100% - (@paddingSize * 2));
+        // this creates the width based on the padding size */
+        
+        height: calc(100% - 32px);
+        // this creates the height based on the padding size */
+        
+        margin: @paddingSize;
+        // adds the padding to the margin */
+        
+        margin-top: 0;
+        // removes the extra top padding */
+        
+        position: absolute;
+        // makes it able to use a cordinate system */
+        
+        border: none;
+        // removes any line created by the default style */
+        
+        padding: 0;
+        // removes the extra padding from the default style*/
+        
+        // overflow: hidden;
+        // disable scrolling ands hides anything that goes beyond the page */
+        
+        transition: 0.3s;
+        // makes movements and colors smooth */
+        
+        .tdr-app-page-container {
+          // defines the page container */
+          
+          position: relative;
+          // makes it allow to use inside elements to use absolute */
+          
+          width: 100%;
+          // makes the width fill up the whole screen */
+          
+          height: 100%;
+          // makes the height fill up the whole screen */
+          
+        }
+        
+      }
+      
+      .tdr-app-page-welcome {
+        // this stylizes the page for the welcome */
+        
+        border: none;
+        // removes any line created by the default style */
+        
+        padding: 0;
+        // removes the extra padding from the default style*/
+        
+        left: 0;
+        // this moves it from the main */
+        
+        .tdr-app-page-welcome-start {
+          // this stylizes the start button */
+          
+          padding: 8px 24px;
+          // this doubles the padding */
+          
+          font-size: 22px;
+          // this increases the font to 22 pixels */
+          
+        }
+      }
+      
+      .tdr-app-page-loading {
+        // this stylizes the page for the home */
+        
+        left: 100%;
+        // this moves it by a 100% */
+        
+      }
+      
+      .tdr-app-page-home {
+        // this stylizes the page for the home */
+        
+        left: 100%;
+        // this moves it by a 100% */
+        
+        .tdr-app-page-home-classes {
+          // stylizes the page for the home classes */
+          
+          height: calc(100% - 20px);
+          // sets a height based on the frame */
+          
+          position: absolute;
+          // allows to move with left and top */
+          
+          top: 0;
+          // puts it at the top */
+          
+          left: 0;
+          // puts it at the left */
+          
+          width: 200px;
+          // puts a fixed width */
+          
+          overflow: scroll;
+          // allows scrolling with the y axis */
+        }
+        
+        .tdr-app-page-home-widgets {
+          // stylizes the page for the home widgets */
+          
+          height: calc(100% - 170px);
+          // sets a height based on the frame */
+          
+          position: absolute;
+          // allows to move with left and top */
+          
+          top: 0;
+          // puts it at the top */
+          
+          left: 240px;
+          // moves it a the left */
+          
+          width: calc(100% - 260px);
+          // sets a height based on the frame */
+          
+          overflow: scroll;
+          // allows scrolling with the y axis */
+        }
+        
+        .tdr-app-page-home-apps {
+          // stylizes the page for the home apps */
+          
+          height: 110px;
+          // puts a fixed height */
+          
+          position: absolute;
+          // allows to move with left and top */
+          
+          bottom: 0;
+          // puts it at the bottom */
+          
+          left: 240px;
+          // moves it a the left */
+          
+          width: calc(100% - 260px);
+          // sets a width based on the frame */
+        }
+        
+      }
+      
+      .tdr-app-page-home-hide .tdr-app-page-home-components {
+        // stylizes the main elments when it is supposed to be hidden */
+        
+        width: 0;
+        // shrinks the width */
+        
+        height: 0;
+        // shrinks the height */
+        
+        padding: 0;
+        // removes the padding */
+        
+        overflow: hidden;
+        // makes sure everything stays hidden */
+        
+      }
+      
+      .tdr-app-page-app {
+        // this stylizes the page for the application */
+        
+        left: 200%;
+        // this moves it by a 200% */
+        
+      }
+        
+      // .tdr-app-container-hide {
+      // // this stylizes the hiden request container */
+        
+      //   .tdr-app-header {
+      //     // this stylizes the header */
+          
+      //     width: 0;
+      //     // makes the width closed */
+          
+      //     padding: 0;
+      //     // removes the extra padding */
+          
+      //   }
+        
+      //   .tdr-app-page-welcome {
+      //     // this stylizes the individual page */
+          
+      //     width: 0;
+      //     // makes the width closed */
+          
+      //     left: 50%;
+      //     // makes it to the center since it is */
+      //   }
+      // }
+      
+      .tdr-app-hidden-header {
+        // this stylizes the hidden header */
+        
+        position: absolute;
+        // this makes it use the cordinate system */
+        
+        top: 0;
+        // makes it at the top */
+        
+        left: 0;
+        // makes it at the left */
+        
+        width: 100px;
+        // makes the width full screen */
+        
+        height: 0;
+        // makes the height 2 pixels*/
+        
+        opacity: 0;
+        // makes it transparent */
+        
+        transition: 0.3s;
+        // makes it change smoothly */
+        
+        overflow: hidden;
+        // makes anything outside hidden */
+        
+        .tdr-app-hidden-header-zoom-out {
+          // this stylizes the zoom out button */
+          
+          position: absolute;
+          // this makes it use the cordinate system */
+          
+          top: 10px;
+          // makes it at the top */
+          
+          left: 10px;
+          // makes it at the left */
+          
+        }
+        
+      }
+      
+      
+    }
+    
+    .tdr-app-pages-full-screen {
+      // this stylizes to make a page full screen */
+      
+      .tdr-app-header {
+        // this stylizes the header full screen */
+        
+        transform: translateY(-96px);
+        // makes it move up */
+        
+      }
+      
+      .tdr-app-hidden-header {
+        // this stylizes the hidden header */
+        
+        top: 0;
+        // makes it at the top */
+        
+        opacity: 0;
+        // makes it transparent */
+        
+        height: 10px;
+        // makes the height 2 pixels*/
+        
+        &:hover {
+          // when the item is being */
+          
+          opacity: 1;
+          // makes it transparent */
+          
+        }
+        
+        overflow: visible;
+        // makes anything outside hidden */
+        
+      }
+      
+      .tdr-app-pages {
+        // this stylizes the pages when it's full screen */
+        
+        height: calc(100% + 30px);
+        // makes the height full screen */
+        
+        transform: translate(-20px, -96px);
+        // makes it go from top left*/
+        
+        width: calc(100% + 40px);
+        // makes the width full screen */
+      }
+    }
+    
+    
+  }
+  
+}

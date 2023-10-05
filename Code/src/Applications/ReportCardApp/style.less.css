@@ -1,0 +1,106 @@
+/* line 3, input */
+body #root .tdr-app-container .tdr-app-page-container .tdr-report-card-app {
+  height: 100%;
+  width: 100%;
+}
+/* line 24, input */
+body #root .tdr-app-container .tdr-app-page-container .tdr-report-card-app .tdr-report-card-app-left-layout {
+  height: 100%;
+  width: 100%;
+}
+/* line 33, input */
+body #root .tdr-app-container .tdr-app-page-container .tdr-report-card-app .tdr-report-card-app-left-layout .tdr-report-card-app-header {
+  position: absolute;
+  left: calc(24px / 2);
+  top: calc(24px / 2);
+  height: 32px;
+  right: calc(24px / 2);
+}
+/* line 51, input */
+body #root .tdr-app-container .tdr-app-page-container .tdr-report-card-app .tdr-report-card-app-left-layout .tdr-report-card-app-navigation {
+  position: absolute;
+  left: calc(24px / 2);
+  top: calc(32px + calc(24px * 2));
+  bottom: calc(24px / 2);
+  width: 200px;
+  overflow-y: scroll;
+}
+/* line 70, input */
+body #root .tdr-app-container .tdr-app-page-container .tdr-report-card-app .tdr-report-card-app-left-layout .tdr-report-card-app-navigation .tdr-report-card-app-navigation-item-textarea {
+  width: calc(100% - 40px);
+  height: calc(100% - 84px);
+}
+/* line 81, input */
+body #root .tdr-app-container .tdr-app-page-container .tdr-report-card-app .tdr-report-card-app-left-layout .tdr-report-card-app-navigation .tdr-report-card-app-navigation-item-edit {
+  display: flex;
+}
+/* line 87, input */
+body #root .tdr-app-container .tdr-app-page-container .tdr-report-card-app .tdr-report-card-app-left-layout .tdr-report-card-app-navigation .tdr-report-card-app-navigation-item-edit .tdr-app-circle-button {
+  margin-top: 10px;
+}
+/* line 99, input */
+body #root .tdr-app-container .tdr-app-page-container .tdr-report-card-app .tdr-report-card-app-left-layout .tdr-report-card-app-body {
+  position: absolute;
+  left: calc(200px + calc(24px * 2));
+  top: calc(32px + calc(24px * 2));
+  bottom: calc(24px / 2);
+  right: calc(24px / 2);
+}
+/* line 119, input */
+body #root .tdr-app-container .tdr-app-page-container .tdr-report-card-app .tdr-report-card-app-bottom-layout {
+  height: 100%;
+  width: 100%;
+}
+/* line 128, input */
+body #root .tdr-app-container .tdr-app-page-container .tdr-report-card-app .tdr-report-card-app-bottom-layout .tdr-report-card-app-header {
+  position: absolute;
+  left: calc(24px / 2);
+  top: calc(24px / 2);
+  height: 32px;
+  right: calc(24px / 2);
+}
+/* line 146, input */
+body #root .tdr-app-container .tdr-app-page-container .tdr-report-card-app .tdr-report-card-app-bottom-layout .tdr-report-card-app-navigation {
+  position: absolute;
+  left: calc(24px / 2);
+  height: calc(40% - 50px);
+  bottom: calc(24px / 2);
+  right: calc(24px / 2);
+  overflow-y: scroll;
+}
+/* line 165, input */
+body #root .tdr-app-container .tdr-app-page-container .tdr-report-card-app .tdr-report-card-app-bottom-layout .tdr-report-card-app-navigation .tdr-report-card-app-navigation-item-edit {
+  width: 100px;
+  display: inline-flex;
+}
+/* line 175, input */
+body #root .tdr-app-container .tdr-app-page-container .tdr-report-card-app .tdr-report-card-app-bottom-layout .tdr-report-card-app-navigation .tdr-report-card-app-navigation-item-sentence {
+  width: calc(100% - 100px);
+  display: inline-block;
+}
+/* line 185, input */
+body #root .tdr-app-container .tdr-app-page-container .tdr-report-card-app .tdr-report-card-app-bottom-layout .tdr-report-card-app-navigation .tdr-report-card-app-navigation-item-textarea {
+  width: calc(100% - 140px);
+  height: calc(100% - 44px);
+}
+/* line 198, input */
+body #root .tdr-app-container .tdr-app-page-container .tdr-report-card-app .tdr-report-card-app-bottom-layout .tdr-report-card-app-body {
+  position: absolute;
+  left: calc(24px / 2);
+  top: calc(32px + calc(24px * 2));
+  bottom: calc(calc(24px / 2) + 40%);
+  right: calc(24px / 2);
+}
+/* line 218, input */
+body #root .tdr-app-container .tdr-app-page-container .tdr-report-card-app .tdr-report-card-app-navigation .tdr-report-card-app-navigation-item-textarea {
+  top: 10px;
+  left: 10px;
+}
+/* line 231, input */
+body #root .tdr-app-container .report-card-app-drag-drop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  transition: none;
+}

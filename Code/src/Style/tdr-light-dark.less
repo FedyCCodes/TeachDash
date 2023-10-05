@@ -1,0 +1,293 @@
+// light-dark-items.less 
+
+@defaultLightBackground: #ffffff;
+// a variable for the default light background 
+
+@defaultLightTextColor: #2e2e2f;
+// a variable for the default light text 
+
+@defaultDarkBackground: #2e2e2f;
+// a variable for the default dark background 
+
+@defaultDarkTextColor: #ffffff;
+// a variable for the default dark text 
+
+@bodyGradientLight: linear-gradient(to right top, #65dfc9, #6cdbeb);
+// a variable for the linear gradient background from (https://github.com/developedbyed/glass-website/blob/master/style.css) for light mode
+
+@bodyGradientDark: linear-gradient(to right top, #009a7d, #027788);
+// a variable for the linear gradient background from (https://github.com/developedbyed/glass-website/blob/master/style.css)
+
+.default-style-glass {
+  // stylizes glass items
+  
+  /*
+  -webkit-backdrop-filter: saturate(180%)blur(8px);
+  backdrop-filter: saturate(180%)blur(8px);
+  */
+  // makes it into glassified
+  
+}
+
+.light-style, .dark-style, .default-style, .system-style {
+  // this stylizes the default item 
+  
+  transition: 0.3s;
+  // makes the change in box-shadow and background-color smooth 
+  
+  border-radius: 10px;
+  // makes the item curved 
+  
+  padding: 10px;
+  // adds extra spacing 
+  
+}
+
+.dark-style {
+  // this stylizes the default item 
+  
+  color: @defaultDarkTextColor;
+  // puts in a dark gray color 
+  
+  stroke: @defaultDarkBackground;
+  // stylizes svg strokes to be the color 
+  
+  background-color: @defaultDarkBackground;
+  // puts in the default background color for the body 
+  
+  //box-shadow: -5px -5px 20px #26282d8f, 5px 5px 20px #0000008f;
+  // puts in a shadow 
+  
+  border: 2px solid #131416;
+  // puts in the border 
+  
+}
+
+.light-style, .default-style {
+  // this stylizes the default item 
+  
+  color: @defaultLightTextColor;
+  // puts in a dark gray color 
+  
+  stroke: @defaultLightBackground;
+  // stylizes svg strokes to be the color 
+  
+  background-color: @defaultLightBackground;
+  // puts in the default background color for the body
+  
+  //box-shadow: -5px -5px 20px #c2d0ec8f, 5px 5px 20px #ffffff8f;
+  // puts in a shadow 
+  
+  border: 2px solid #e0e7f5;
+  // puts in the border 
+}
+
+@media (prefers-color-scheme: light) {
+  // checks if the user is using light mode 
+  
+  .polyline-stroke {
+    // stylizes the path item 
+    
+    stroke: @defaultLightTextColor;
+    // stylizes svg strokes to be the color 
+  }
+  
+  body, .default-style, .default-style-no-add, .system-style {
+    // stylizes the body 
+    
+    color: @defaultLightTextColor;
+    // puts in a dark gray color 
+    
+    stroke: @defaultLightBackground;
+    // stylizes svg strokes to be the color 
+    
+    background-color: @defaultLightBackground;
+    // puts in the default background color for the body
+    
+  }
+  
+  #root {
+    // stylizes the body
+    
+    background: @bodyGradientLight;
+    // with the background gradient
+  }
+  
+  .default-style-glass {
+    // stylizes the glass items in light mode
+    
+    background: #ffffffb8;
+    // this puts in a transparent white background
+  }
+  
+  .default-style, .system-style {
+    // this stylizes the default item 
+    
+    // box-shadow: -5px -5px 20px #c2d0ec8f, 5px 5px 20px #ffffff8f;
+    // puts in a shadow 
+    
+    border: 2px solid #e0e7f5;
+    // puts in the border
+  }
+  
+}
+
+@media (prefers-color-scheme: dark) {
+  // checks if the user is using light mode 
+  
+  .polyline-stroke {
+    // stylizes the path item 
+    
+    stroke: @defaultDarkTextColor;
+    // stylizes svg strokes to be the color 
+  }
+  
+  body, .default-style, .default-style-no-add, .system-style {
+    // stylizes the body 
+    
+    color: @defaultDarkTextColor;
+    // puts in a dark gray color 
+    
+    stroke: @defaultDarkBackground;
+    // stylizes svg strokes to be the color 
+    
+    background-color: @defaultDarkBackground;
+    // puts in the default background color for the body 
+  }
+  
+  #root {
+    // stylizes the body
+    
+    background: @bodyGradientDark;
+    // with the background gradient
+  }
+  
+  .default-style-glass {
+    // stylizes the glass items in dark mode
+    
+    background: #2e2e2fb8;
+    // this puts in a transparent white background
+  }
+  
+  .default-style, .system-style {
+    // this stylizes the default item 
+    
+    // box-shadow: -5px -5px 20px #26282d8f, 5px 5px 20px #0000008f;
+    // puts in a shadow 
+    
+    border: 2px solid #131416;
+    // puts in the border 
+  }
+  
+}
+
+.body-dark {
+  // this stylizes the body when it is in light mode 
+  
+  color: @defaultDarkTextColor;
+  // puts in a dark gray color 
+  
+  .polyline-stroke {
+    // stylizes the path item 
+    
+    stroke: @defaultDarkTextColor;
+    // stylizes svg strokes to be the color 
+  }
+  
+  .default-style, .default-style-no-add {
+    // this stylizes the default item 
+    
+    color: @defaultDarkTextColor;
+    // puts in a dark gray color 
+    
+    stroke: @defaultDarkBackground;
+    // stylizes svg strokes to be the color 
+    
+    
+    background-color: @defaultDarkBackground;
+    // puts in the default background color for the body 
+  }
+  
+  .default-style-glass {
+    // stylizes the glass items in dark mode
+    
+    background: #2e2e2fb8;
+    // this puts in a transparent white background
+  }
+  
+  .default-style {
+    // this stylizes the default item 
+    
+    box-shadow: -5px -5px 20px #26282d8f, 5px 5px 20px #0000008f;
+    // puts in a shadow 
+    
+    border: 2px solid #131416;
+    // puts in the border 
+  }
+  
+  background: @bodyGradientDark;
+  // background-color: @defaultDarkBackground;
+  // puts in the dark gray background color for the body 
+  
+}
+
+.body-light {
+  // this stylizes the body when it is in dark mode 
+  
+  color: @defaultLightTextColor;
+  // puts in a dark gray color 
+  
+  .polyline-stroke {
+    // stylizes the path item 
+    
+    stroke: @defaultLightTextColor;
+    // stylizes svg strokes to be the color 
+  }
+  
+  .default-style, .default-style-no-add {
+    // this stylizes the default item 
+    
+    color: @defaultLightTextColor;
+    // puts in a dark gray color 
+    
+    // .tdr-ionicon .path-stroke {
+    //   // stylizes the path item 
+      
+      stroke: @defaultLightBackground;
+      // stylizes svg strokes to be the color 
+      
+    // }
+    
+    // .tdr-ionicon .path-fill {
+    //   // stylizes the path item 
+      
+    //   fill: @defaultLightBackground;
+    //   // stylizes svg fill to be the color 
+    
+    background-color: @defaultLightBackground;
+    // puts in the default background color for the body 
+    
+  }
+  
+  .default-style-glass {
+    // stylizes the glass items in dark mode
+    
+    background: #ffffffb8;
+    // this puts in a transparent white background
+  }
+  
+  .default-style {
+    // this stylizes the default item 
+    
+    //box-shadow: -5px -5px 20px #c2d0ec8f, 5px 5px 20px #ffffff8f;
+    // puts in a shadow 
+    
+    border: 2px solid #e0e7f5;
+    // puts in the border 
+  }
+  
+  background: @bodyGradientLight;
+  // background-color: @defaultLightBackground;
+  // puts in the white background color for the body 
+  
+}

@@ -1,0 +1,27 @@
+/* line 3, input */
+body #root .tdr-app-container .tdr-app-page-container .tdr-class-edit-app {
+  height: 100%;
+  width: 100%;
+}
+/* line 21, input */
+body #root .tdr-app-container .tdr-app-page-container .tdr-class-edit-app .tdr-class-edit-app-header {
+  position: absolute;
+  left: calc(24px / 2);
+  top: calc(24px / 2);
+  height: 32px;
+  right: calc(24px / 2);
+}
+/* line 37, input */
+body #root .tdr-app-container .tdr-app-page-container .tdr-class-edit-app .tdr-class-edit-app-header .tdr-app-button {
+  font-size: 16px;
+  margin: 0 5px;
+}
+/* line 50, input */
+body #root .tdr-app-container .tdr-app-page-container .tdr-class-edit-app .tdr-class-edit-app-body {
+  overflow: scroll;
+  position: absolute;
+  left: calc(24px / 2);
+  top: calc(32px + calc(24px * 2));
+  bottom: calc(24px / 2);
+  right: calc(24px / 2);
+}

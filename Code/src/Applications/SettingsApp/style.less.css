@@ -1,0 +1,34 @@
+/* line 3, input */
+body #root .tdr-app-container .tdr-app-page-container .tdr-settings-app {
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
+}
+/* line 15, input */
+body #root .tdr-app-container .tdr-app-page-container .tdr-settings-app .tdr-settings-app-item {
+  margin: 8px 4px;
+  box-shadow: none;
+  display: flex;
+}
+/* line 30, input */
+body #root .tdr-app-container .tdr-app-page-container .tdr-settings-app .tdr-settings-app-item ul {
+  margin-block-start: 4px;
+  margin-block-end: 4px;
+  padding-inline-start: 30px;
+}
+/* line 40, input */
+body #root .tdr-app-container .tdr-app-page-container .tdr-settings-app .tdr-settings-app-item ul li img,
+body #root .tdr-app-container .tdr-app-page-container .tdr-settings-app .tdr-settings-app-item ul li svg {
+  margin: 4px;
+  height: 30px;
+  transform: translateY(12px);
+}
+/* line 55, input */
+body #root .tdr-app-container .tdr-app-page-container .tdr-settings-app .tdr-settings-app-item span {
+  margin: 6px;
+  font-size: 18px;
+}
+/* line 65, input */
+body #root .tdr-app-container .tdr-app-page-container .tdr-settings-app .tdr-settings-app-item button {
+  margin: 0 6px;
+}

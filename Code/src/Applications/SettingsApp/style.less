@@ -1,0 +1,75 @@
+// style.less
+
+body #root .tdr-app-container .tdr-app-page-container .tdr-settings-app {
+  // stylizes the application
+  
+  height: 100%;
+  // makes the height full size
+  
+  width: 100%;
+  // makes the width full size
+  
+  overflow: scroll;
+  // allows scrolling in the application
+  
+  .tdr-settings-app-item {
+    // stylizes the items
+    
+    margin: 8px 4px;
+    // puts invisible padding
+    
+    box-shadow: none;
+    // removes the shadow so it looks nicer
+    
+    // width: 200px;
+    // sets a fixed
+    
+    display: flex;
+    // aligns the items horizontally
+    
+    ul {
+      // stylizes the list
+      
+      margin-block-start: 4px;
+      margin-block-end: 4px;
+      // adds in a lower invisible padding
+      
+      padding-inline-start: 30px;
+      // decreases the padding from the start
+      
+      li img, li svg {
+        // stylizes the icons when used in the app
+        
+        margin: 4px;
+        // adds invisble padding
+        
+        height: 30px;
+        // puts in a fixed width and height of 18 pixels
+        
+        transform: translateY(12px);
+        // makes the icon more centered
+        
+      }
+    }
+    
+    span {
+      // this stylizes the text
+      
+      margin: 6px;
+      // puts invisible padding 
+      
+      font-size: 18px;
+      // increases 18
+    }
+    
+    button {
+      // this stylizes the button
+      
+      margin: 0 6px;
+      // puts invisible padding 
+      
+    }
+    
+  }
+  
+}
