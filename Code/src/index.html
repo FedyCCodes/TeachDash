@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">-->
+    <!--<meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">-->
+    <title>TeachDash</title>
+    
+    <link rel="stylesheet" href="./Applications/SettingsApp/style.less.css"   type="text/css" media="all" />
+    <link rel="stylesheet" href="./Applications/ScheduleApp/style.less.css"   type="text/css" media="all" />
+    <link rel="stylesheet" href="./Applications/ClassEditApp/style.less.css"  type="text/css" media="all" />
+    <link rel="stylesheet" href="./Applications/ReportCardApp/style.less.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="./Applications/RepositoryApp/style.less.css" type="text/css" media="all" />
+    
+    <link rel="stylesheet" href="./Style/tdr-alert.less.css"                  type="text/css" media="all" />
+    <link rel="stylesheet" href="./Style/tdr-widget-item.less.css"            type="text/css" media="all" />
+    <link rel="stylesheet" href="./Style/tdr-app-class-item.less.css"         type="text/css" media="all" />
+    <link rel="stylesheet" href="./Style/tdr-light-dark.less.css"             type="text/css" media="all" />
+    <link rel="stylesheet" href="./Style/tdr-components.less.css"             type="text/css" media="all" />
+    <link rel="stylesheet" href="./Style/tdr-pages.less.css"                  type="text/css" media="all" />
+    <link rel="stylesheet" href="./Style/tdr-header.less.css"                 type="text/css" media="all" />
+    <link rel="stylesheet" href="./Style/tdr-home.less.css"                   type="text/css" media="all" />
+    <link rel="stylesheet" href="./Style/tdr-app-circle-loading.less.css"     type="text/css" media="all" />
+    
+    <link rel="stylesheet" href="./Assets/Roboto/style.css"                   type="text/css" media="all" />
+    
+    <script src="./System/Prototypes/String.replaceAt.js"></script>
+    <script src="./System/Prototypes/StyleSheet.objectify.js"></script>
+    
+    <script src="./Libraries/react.development.js"></script>
+    <script src="./Libraries/react-dom.development.js"></script>
+    
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- You can also require other files to run in this process -->
+    
+    <script src="./System/TeachDash.js"></script>
+    <script src="./System/FileSystem/TDFileReader.js"></script>
+    <script src="./System/FileSystem/TDFileSystem.js"></script>
+    <script src="./System/FileSystem/TDFileWriter.js"></script>
+    <script src="./System/FileSystem/TDFSSimplified.js"></script>
+    
+    <script src="./System/GUI/Color/TDColor.js"></script>
+    <script src="./System/GUI/Color/TDGradientColor.js"></script>
+    
+    <script src="./System/Data/TDGrades.js"></script>
+    <script src="./System/Data/TDGradeWeight.js"></script>
+    <script src="./System/Data/TDSchoolClass.js"></script>
+    <script src="./System/Data/TDStudentReport.js"></script>
+    <script src="./System/Data/TDStudentReport.predefined.js"></script>
+    <script src="./System/Data/TDStudentClass.js"></script>
+    
+    <script src="./System/GUI/Classes/TDAlert.js"></script>
+    <script src="./System/GUI/Classes/TDFileDropper.js"></script>
+    <script src="./System/GUI/Classes/TDClipBoard.js"></script>
+    <script src="./System/GUI/Classes/TDKeyboard.js"></script>
+    <script src="./System/GUI/Classes/TDStartingFrame.js"></script>
+    <script src="./System/GUI/Classes/TDHeaderBar.js"></script>
+    <script src="./System/GUI/Classes/TDCore.js"></script>
+    
+    <script src="./System/GUI/Color/TDColor.predefined.js"></script>
+    <script src="./System/GUI/Color/TDGradientColor.predefined.js"></script>
+    
+    <script src="./System/Data/TDUserData.js"></script>
+    
+    <script src="./System/GUI/Classes/TDKeyboard.predefined.js"></script>
+    
+    <script src="./System/GUI/Components/tdr-ionicon.js"></script>
+    <script src="./System/GUI/Components/app-class-item.js"></script>
+    <script src="./System/GUI/Components/app-widget-item.js"></script>
+    <script src="./System/GUI/Components/app-header.js"></script>
+    <script src="./System/GUI/Components/app-hidden-header.js"></script>
+    <script src="./System/GUI/Components/app-circle-button.js"></script>
+    <script src="./System/GUI/Components/app-button.js"></script>
+    <script src="./System/GUI/Components/app-loading-circle.js"></script>
+    <script src="./System/GUI/Components/app-app-launcher.js"></script>
+    <script src="./System/GUI/Components/app-alert.js"></script>
+    
+    <script src="./System/GUI/Pages/App/app-page-container.js"></script>
+    <script src="./System/GUI/Pages/App/app-page.js"></script>
+    
+    <script src="./System/GUI/Pages/Home/app-page-container.js"></script>
+    <script src="./System/GUI/Pages/Home/app-page.js"></script>
+    
+    <script src="./System/GUI/Pages/Welcome/app-page-container.js"></script>
+    <script src="./System/GUI/Pages/Welcome/app-page.js"></script>
+    
+    <script src="./System/GUI/Pages/Loading/app-page-container.js"></script>
+    <script src="./System/GUI/Pages/Loading/app-page.js"></script>
+    
+    <script src="./System/GUI/Classes/TDAppFrame.js"></script>
+    <script src="./System/GUI/Classes/TDApplication.js"></script>
+    
+    <script src="./System/GUI/Compilation/app-compilation.js"></script>
+    
+    <script src="./Applications/SettingsApp/TDRSettingsAppContainer.js"></script>
+    <script src="./Applications/SettingsApp/class.js"></script>
+    
+    <script src="./Applications/ScheduleApp/TDRScheduleWidget.js"></script>
+    <script src="./Applications/ScheduleApp/TDRScheduleAppContainer.js"></script>
+    <script src="./Applications/ScheduleApp/class.js"></script>
+    
+    <script src="./Applications/ClassEditApp/TDRClassEditAppContainer.js"></script>
+    <script src="./Applications/ClassEditApp/class.js"></script>
+    
+    <script src="./Applications/ReportCardApp/TDRReportCardAppContainer.js"></script>
+    <script src="./Applications/ReportCardApp/class.js"></script>
+    
+    <script src="./Applications/RepositoryApp/TDRRepositoryAppContainer.js"></script>
+    <script src="./Applications/RepositoryApp/class.js"></script><!---->
+    
+    <script src="./Tests/TDTest.js"></script>
+    <!--<script src="./renderer.js"></script>-->
+  </body>
+</html>
